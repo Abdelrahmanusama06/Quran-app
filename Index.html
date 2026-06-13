@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quran App Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- زرار القائمة -->
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+ <div id="sidebar" class="sidebar">
+  <h3>Bookmarks</h3>
+  <ul id="bookmarkList"></ul>
+  <button onclick="addBookmark()">Add Current Page</button>
+</div>
+>
+
+  <!-- اختيار البداية -->
+  <div id="startScreen" class="start-screen">
+    <h2>Select Start Page</h2>
+    <select id="pageSelector"></select>
+    <button onclick="startApp()">Start</button>
+  </div>
+
+  <!-- الصور -->
+  <div class="gallery" style="display:none;">
+    <img id="display" src="" alt="Image">
+  </div>
+  <div class="controls" style="display:none;">
+    <button onclick="prevImage()">⬅ Previous</button>
+    <button onclick="nextImage()">Next ➡</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

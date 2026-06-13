@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f0f0f0;
+  text-align: center;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  background: #333;
+  color: #fff;
+  text-align: left;
+}
+
+.sidebar {
+  position: fixed;
+  left: -250px;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background: #222;
+  color: #fff;
+  padding: 20px;
+  transition: left 0.3s;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 5px 0;
+  cursor: pointer;
+  color: #0f0;
+}
+
+.gallery img {
+  max-width: 30%;
+  margin: 20px auto;
+  border: 2px solid #333;
+  border-radius: 8px;
+}
+
+.controls button {
+  margin: 10px;
+  padding: 10px 20px;
+}
+
+.start-screen {
+  margin-top: 50px;
+}
