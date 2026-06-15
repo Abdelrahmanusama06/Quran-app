@@ -13,61 +13,28 @@
   "background_color": "#ffffff",
   "theme_color": "#008000",
   "categories": ["books", "education", "religion"],
-  "screenshots": [
-    {
-      "src": "screenshot1.png",
-      "sizes": "1080x1920",
-      "type": "image/png"
-    },
-    {
-      "src": "screenshot2.png",
-      "sizes": "1080x1920",
-      "type": "image/png"
-    }
-  ],
   "icons": [
     {
-      "src": "icon-192.png",
+      "src": "icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "icon-512.png",
+      "src": "icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
   ],
-  "protocol_handlers": [
+  "screenshots": [
     {
-      "protocol": "mailto",
-      "url": "/index.html?mailto=%s"
-    }
-  ],
-  "share_target": {
-    "action": "/index.html",
-    "method": "POST",
-    "enctype": "multipart/form-data",
-    "params": {
-      "title": "name",
-      "text": "description",
-      "url": "link"
-    }
-  },
-  "file_handlers": [
+      "src": "screenshots/screen1.png",
+      "sizes": "1080x1920",
+      "type": "image/png"
+    },
     {
-      "action": "/index.html",
-      "accept": {
-        "image/*": [".png", ".jpg", ".jpeg"]
-      }
-    }
-  ],
-  "launch_handler": {
-    "client_mode": "focus-existing"
-  },
-  "related_applications": [
-    {
-      "platform": "play",
-      "id": "com.example.quranapp"
+      "src": "screenshots/screen2.png",
+      "sizes": "1080x1920",
+      "type": "image/png"
     }
   ]
 }
