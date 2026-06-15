@@ -4,17 +4,22 @@
   <meta charset="UTF-8">
   <title>Quran App Gallery</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- ربط ملف الـ manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- تحديد ألوان التطبيق -->
+  <meta name="theme-color" content="#008000">
 </head>
 <body>
   <!-- زرار القائمة -->
   <div class="menu-icon" onclick="toggleMenu()">☰</div>
 
- <div id="sidebar" class="sidebar">
-  <h3>Bookmarks</h3>
-  <ul id="bookmarkList"></ul>
-  <button onclick="addBookmark()">Add Current Page</button>
-</div>
->
+  <div id="sidebar" class="sidebar">
+    <h3>Bookmarks</h3>
+    <ul id="bookmarkList"></ul>
+    <button onclick="addBookmark()">Add Current Page</button>
+  </div>
 
   <!-- اختيار البداية -->
   <div id="startScreen" class="start-screen">
@@ -32,6 +37,16 @@
     <button onclick="nextImage()">Next ➡</button>
   </div>
 
+  <!-- ربط ملف الـ JS -->
   <script src="script.js"></script>
+
+  <!-- تفعيل الـ Service Worker -->
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js")
+        .then(() => console.log("Service Worker registered"))
+        .catch(err => console.error("Service Worker failed:", err));
+    }
+  </script>
 </body>
 </html>
